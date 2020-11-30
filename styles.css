@@ -1,0 +1,265 @@
+:root {
+    --black: #313131;
+    --green: #A8B5A4;
+    --cream: #EBE6E1;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: futura-pt,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;   
+}
+
+
+
+header {
+    display: flex;
+    background: var(--green);
+    justify-content: space-between;
+    padding: 8px 15px;
+}
+
+header img{
+    height: 40px;
+}
+
+header ul {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header ul>li {
+    font-weight: bold;
+    list-style-type: none;
+    margin: 0 22px;
+    color: var(--cream);
+    font-size: 18px;
+}
+
+header>button {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 20px;
+    outline: none;
+    border: 3px solid var(--black);
+    background: var(--cream);
+    box-shadow: none;
+}
+
+button {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 20px;
+    outline: none;
+    border: 3px solid var(--black);
+    background: var(--cream);
+    box-shadow: 8px 10px var(--green);
+}
+
+
+section {
+    display: flex;
+    align-items: center;
+    background-color: var(--cream)
+}
+
+section div {
+    width: 70%;
+  }
+
+/* section:nth-child(2) {
+    flex-direction: row-reverse;
+  } */
+
+div.full-image {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+}
+
+div.image-1 {
+    background-image: url("/assets/fitzroypinnacle.jpg");
+}
+div.image-2 {
+    background-image: url("/assets/pinnacleLights@2x.jpg");
+}
+div.image-3 {
+    background-image: url("/assets/beersOnTap@2x.jpg");
+}
+
+.text {
+    margin: auto;   
+}
+
+.text h1 {
+    font-size: clamp(3.5rem, 2.5vw, 4rem);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.text p {
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.text button {
+    margin-top: 20px;
+}
+
+.coloured-bar {
+    background-color:var(--black); 
+    padding: 42px 0;
+}
+
+.coloured-bar h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--cream);
+    text-transform: uppercase;
+}
+
+.weekly-specials {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--green);
+    padding: 55px 0 0 0;
+}
+
+.card {
+    position: relative;
+    top: -85px;
+    background: white;
+    width: 238px;
+    border: 3px solid var(--black);
+    text-align: center;
+    box-shadow: 8px 10px var(--cream);
+}
+.card h2 {
+    background-color: var(--green);
+    color: var(--black);
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+.card p {
+    margin-top: 4rem;
+}
+
+.card h3 {
+    font-size: 5rem;
+    margin-top: 4rem;
+}
+
+.info-section,
+.footer-section{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    padding: 20px 0 30px 0;
+    background: var(--green)
+}
+
+
+
+.info-section h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--cream);
+    text-transform: uppercase;
+}
+
+.info-section p {
+    color: var(--cream);
+    margin: 10px 0;
+}
+
+.footer-section {
+    background-color: var(--black);
+    color: var(--cream);
+    align-items: center;
+    padding: 25px 0;
+}
+
+.footer-section h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-section i {
+    font-size: 2rem;
+}
+
+.footer-section i:last-of-type{
+    margin-left: 15px;
+}
+
+@media (max-width: 800px) {
+    body {
+      font-size: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+      font-size: 22px;
+    }
+    
+    section {
+      display: block;
+    }
+    
+    section div {
+      width:  100%;
+    }
+    
+    section div.text,
+    .footer-section {
+      padding: 30px;
+    }
+
+    article div.text {
+        padding: 30px;
+      }
+
+    .weekly-specials,
+    .info-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-section h2 {
+        font-size: 22px;
+    }
+    .footer-section {
+        flex-direction: column-reverse;
+    }
+
+    .weekly-specials .card {
+        margin-bottom: 20px;
+    }
+
+    .weekly-specials .text {
+        text-align: center;
+    }
+    
+    div.full-image {
+      height: 100vw;
+     }
+  }
+
+
