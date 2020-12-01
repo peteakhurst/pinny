@@ -89,13 +89,13 @@ div.full-image {
 }
 
 div.image-1 {
-    background-image: url("/assets/fitzroypinnacle.jpg");
+    background-image: url("assets/fitzroypinnacle.jpg");
 }
 div.image-2 {
-    background-image: url("/assets/pinnacleLights@2x.jpg");
+    background-image: url("assets/pinnacleLights@2x.jpg");
 }
 div.image-3 {
-    background-image: url("/assets/beersOnTap@2x.jpg");
+    background-image: url("assets/beersOnTap@2x.jpg");
 }
 
 .text {
