@@ -9,7 +9,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="styles.css">
-    <title>The Fitzroy Pinnacle</title>
+    <title>Contact | The Fitzroy Pinnacle</title>
 </head>
 
 <body>
@@ -44,7 +44,7 @@
 
             <div class="text">
 
-                <h1>Keeping Live <br>Music Alive</h1>
+                <h1>Contact Us</h1>
 
                 <p>We’re open and following all government guidelines to make the space as safe as possible for
                     everyone. </p>
@@ -55,59 +55,65 @@
                         a Table</a></button>
             </div>
         </div>
-        <div class="full-image image-1"></div>
-    </section>
-    <section>
-        <div class="full-image image-2"></div>
-        <div class="container">
-            <div class="text">
-                <h1>About US</h1>
+        <div class="">
+            <form action="action_page.php">
 
-                <p>We’re open and following all government guidelines to make the space as safe as possible for
-                    everyone.
-                </p>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-                <p>Book a table below</p>
-                <button><a
-                        href="https://www.thefork.com.au/restaurant/the-fitzroy-pinnacle-r631541#booking=&partySize=2">Book
-                        a Table</a></button>
-            </div>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <button><input type="submit" value="Submit"></button>
+
+            </form>
         </div>
     </section>
 
     <div class="coloured-bar">
-        <h1>Weekly Specials</h1>
+        <h1>What's On Guide</h1>
     </div>
     <div class="weekly-specials">
         <div class="card">
             <div class="header-bar">
-                <h2>Meatless <br>Mondays</h2>
+                <h2>Monday</h2>
             </div>
 
-            <p>All vegan options </p>
+            <p>Meatless Mondays</p>
 
             <h3>$20</h3>
         </div>
         <div class="card">
-            <h2>Taco <br>Tuesdays</h2>
+            <h2>Tuesday</h2>
 
-            <p>Choose from 2 options</p>
+            <p>Tacos and Trivia</p>
 
             <h3>$15</h3>
         </div>
         <div class="card">
-            <h2>HUMPday <br>PARMA</h2>
+            <h2>Wednesday</h2>
 
-            <p>Choose from 2 options</p>
+            <p>Humpday Parma</p>
 
             <h3>$18</h3>
         </div>
         <div class="card">
-            <h2>Thursday <br>Steak night</h2>
+            <h2>Thursday</h2>
 
-            <p>Choose from 2 options</p>
+            <p>Steak Night</p>
 
             <h3>$20</h3>
+        </div>
+
+        <div class="card">
+            <h2>Friday</h2>
+
+            <p>Free Music Night</p>
+
+            <h3>$18</h3>
         </div>
     </div>
 

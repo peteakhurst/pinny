@@ -44,7 +44,7 @@ header ul {
     justify-content: space-around;
 }
 
-.desktop-ul li {
+.desktop-ul li a{
     font-weight: bold;
     margin: 0 22px;
     color: var(--cream);
@@ -66,7 +66,7 @@ header ul {
     font-size: 18px;
     padding: 8px 20px;
     outline: none;
-    border: 3px solid var(--black);
+    border: 6px solid var(--black);
     background: var(--cream);
     box-shadow: none;
 }
@@ -76,7 +76,7 @@ button {
     font-size: 18px;
     padding: 8px 20px;
     outline: none;
-    border: 3px solid var(--black);
+    border: 6px solid var(--black);
     background: var(--cream);
     box-shadow: 8px 10px var(--green);
     
@@ -164,7 +164,7 @@ div.image-3 {
     top: -85px;
     background: white;
     width: 238px;
-    border: 3px solid var(--black);
+    border: 6px solid var(--black);
     text-align: center;
     box-shadow: 8px 10px var(--cream);
 }
@@ -236,6 +236,30 @@ div.image-3 {
     display: none;
 }
 
+form {
+    margin: 20px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+  input[type=submit] {
+      background: none;
+      border: none;
+      font-weight: bold;
+      font-size: 18px;
+  }
+
+
 @media (max-width: 800px) {
     body {
       font-size: 16px;
@@ -273,7 +297,7 @@ div.image-3 {
 
     .nav-ul li {
         margin: 20px 0;
-        border-bottom: 3px solid var(--cream);
+        border-bottom: 6px solid var(--cream);
     }
 
     .nav-ul button{
