@@ -125,7 +125,7 @@ div.image-3 {
 }
 
 .text h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -146,7 +146,7 @@ div.image-3 {
 }
 
 .coloured-bar h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     color: var(--cream);
     text-transform: uppercase;
@@ -210,10 +210,7 @@ div.image-3 {
     padding: 25px 0;
 }
 
-.footer-section article:last-of-type {
-    text-align: center;
-    margin-bottom: 20px;
-}
+
 
 .footer-section h2 {
     font-size: 4rem;
@@ -336,6 +333,11 @@ div.image-3 {
     div.full-image {
       height: 100vw;
      }
+
+     .footer-section article:last-of-type {
+        text-align: center;
+        margin-bottom: 20px;
+    }
   }
 
 
