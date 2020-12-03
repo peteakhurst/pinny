@@ -18,6 +18,11 @@ body {
     font-size: 16px;   
 }
 
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
 
 
 header {
@@ -34,19 +39,29 @@ header img{
 header ul {
     margin-left: auto;
     display: flex;
+    list-style-type: none;
     align-items: center;
     justify-content: space-around;
 }
 
-header ul>li {
+.desktop-ul li {
     font-weight: bold;
-    list-style-type: none;
     margin: 0 22px;
     color: var(--cream);
     font-size: 18px;
 }
 
-header>button {
+
+.hamburger {
+    box-shadow: none;
+}
+
+.nav-ul {
+    display: none;
+}
+
+.desktop-ul > button,
+.nav-ul > button {
     font-weight: bold;
     font-size: 18px;
     padding: 8px 20px;
@@ -64,8 +79,15 @@ button {
     border: 3px solid var(--black);
     background: var(--cream);
     box-shadow: 8px 10px var(--green);
+    
 }
 
+button:hover {
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px var(--green);
+
+}
 
 section {
     display: flex;
@@ -103,14 +125,15 @@ div.image-3 {
 }
 
 .text h1 {
-    font-size: clamp(3.5rem, 2.5vw, 4rem);
+    font-size: 3rem;
     text-transform: uppercase;
     font-weight: 700;
 }
 
 .text p {
-    padding: 20px 0;
     font-size: 18px;
+    line-height: 1.7;
+    margin: 15px 0;
 }
 
 .text button {
@@ -169,8 +192,6 @@ div.image-3 {
     background: var(--green)
 }
 
-
-
 .info-section h2 {
     font-size: 4rem;
     font-weight: 700;
@@ -180,7 +201,6 @@ div.image-3 {
 
 .info-section p {
     color: var(--cream);
-    margin: 10px 0;
 }
 
 .footer-section {
@@ -188,6 +208,11 @@ div.image-3 {
     color: var(--cream);
     align-items: center;
     padding: 25px 0;
+}
+
+.footer-section article:last-of-type {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .footer-section h2 {
@@ -202,8 +227,16 @@ div.image-3 {
     font-size: 2rem;
 }
 
+.footer-section a {
+    color: var(--cream)
+}
+
 .footer-section i:last-of-type{
     margin-left: 15px;
+}
+
+.hamburger {
+    display: none;
 }
 
 @media (max-width: 800px) {
@@ -212,11 +245,47 @@ div.image-3 {
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 3rem;
     }
     
     h2 {
-      font-size: 22px;
+      font-size: 18px;
+    }
+
+    .desktop-ul {
+        display: none;
+    }
+    
+    
+    .nav-ul {
+        font-size: 2rem;
+        list-style: none;
+        width: 100%;
+        height: 0;
+        transition: all 0.5s ease-in-out;
+        display: flex;
+        background: var(--green);
+        flex-direction: column;
+        align-items: center;
+        overflow-y: hidden;
+    }
+
+    .show {
+        height: 250px;
+    }
+
+    .nav-ul li {
+        margin: 20px 0;
+        border-bottom: 3px solid var(--cream);
+    }
+
+    .nav-ul button{
+        margin-bottom: 10px;
+    }
+
+   header .hamburger {
+        display: block;
+        cursor: pointer;
     }
     
     section {
@@ -236,17 +305,24 @@ div.image-3 {
         padding: 30px;
       }
 
-    .weekly-specials,
-    .info-section {
+    .weekly-specials {
         flex-direction: column;
         align-items: center;
     }
 
+    .info-section {
+        display: block;
+    }
+
     .info-section h2 {
-        font-size: 22px;
+        font-size: 2rem;
     }
     .footer-section {
         flex-direction: column-reverse;
+    }
+
+    .footer-section h2 {
+        font-size: 2rem;
     }
 
     .weekly-specials .card {
