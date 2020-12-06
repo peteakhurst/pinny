@@ -79,14 +79,12 @@ button {
     border: 6px solid var(--black);
     background: var(--cream);
     box-shadow: 8px 10px var(--green);
-    
+    transition: 0.5s all ease-in-out;
 }
 
 button:hover {
-    transition: 0.5s all ease-in-out;
     cursor: pointer;
     box-shadow: 0px 0px var(--green);
-
 }
 
 section {
@@ -192,7 +190,14 @@ div.image-5 {
     margin-top: 4rem;
 }
 
-.info-section,
+.info-section {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    padding: 20px 0 30px 0;
+    background: var(--black)
+}
+
 .footer-section{
     display: flex;
     align-content: center;
@@ -208,7 +213,7 @@ div.image-5 {
     text-transform: uppercase;
 }
 
-.info-section p {
+.info-section p, a {
     color: var(--cream);
 }
 
