@@ -213,7 +213,8 @@ div.image-5 {
     text-transform: uppercase;
 }
 
-.info-section p, a {
+.info-section p,
+.info-section a {
     color: var(--cream);
 }
 
@@ -223,8 +224,6 @@ div.image-5 {
     align-items: center;
     padding: 25px 0;
 }
-
-
 
 .footer-section h2 {
     font-size: 4rem;
@@ -350,7 +349,7 @@ input[type=text], select, textarea {
     }
 
     .info-section h2 {
-        font-size: 2rem;
+        font-size: 4rem;
     }
     .footer-section {
         flex-direction: column-reverse;
