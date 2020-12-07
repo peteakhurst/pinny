@@ -29,7 +29,7 @@ header {
     display: flex;
     background: var(--green);
     justify-content: space-between;
-    padding: 8px 15px;
+    padding: 8px 80px;
 }
 
 header img{
@@ -283,6 +283,10 @@ input[type=text], select, textarea {
 @media (max-width: 800px) {
     body {
       font-size: 16px;
+    }
+
+    header {
+        padding: 8px 15px;
     }
 
     h1 {
