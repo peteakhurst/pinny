@@ -351,11 +351,11 @@ input[type=text], select, textarea {
     }
 
     article div.text {
-        padding: 30px;
+        padding: 5px 20px;
       }
 
     .weekly-specials {
-        padding: 0 15px;
+        padding: 0 15px 0 10px;
         flex-wrap: wrap;
     }
 
