@@ -414,7 +414,8 @@ input[type=text], select, textarea {
         display: none;
     }
 
-     .full-image.image-2 {
+     .full-image.image-2,
+     .full-image.image-5 {
          display: none;
      }
 
