@@ -2,8 +2,9 @@
     --black: #313131;
     --green: #A8B5A4;
     --cream: #EBE6E1;
-
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans+Narrow:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -11,23 +12,50 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: futura-pt,sans-serif;
+body,html {
     font-weight: 500;
     font-style: normal;
-    font-size: 16px;   
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 4em;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 400;
+   font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2em;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
 }
 
 a {
     text-decoration: none;
+    border-bottom: 3px solid var(--green);
     color: var(--black);
 }
 
 header {
     display: flex;
+    align-items: center;
     background: var(--green);
     justify-content: space-between;
     padding: 8px 80px;
+}
+
+header a {
+    border-bottom: none;
+}
+
+.header-bar {
+    background: var(--green);
 }
 
 header img{
@@ -35,6 +63,8 @@ header img{
 }
 
 header ul {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     margin-left: auto;
     display: flex;
     list-style-type: none;
@@ -42,12 +72,12 @@ header ul {
     justify-content: space-around;
 }
 
-.desktop-ul li a{
+.desktop-ul li a {
     font-weight: bold;
     margin: 0 22px;
     color: var(--cream);
-    font-size: 18px;
 }
+
 .hamburger {
     box-shadow: none;
 }
@@ -56,8 +86,8 @@ header ul {
     display: none;
 }
 
-.desktop-ul > button,
-.nav-ul > button {
+.desktop-ul button,
+.nav-ul button {
     font-weight: bold;
     font-size: 18px;
     padding: 8px 20px;
@@ -76,6 +106,7 @@ button {
     background: var(--cream);
     box-shadow: 8px 10px var(--green);
     transition: 0.5s all ease-in-out;
+    margin: 15px 0;
 }
 
 button:hover {
@@ -83,67 +114,54 @@ button:hover {
     box-shadow: 0px 0px var(--green);
 }
 
-section {
+.container {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    background-color: var(--cream)
+    justify-content: center;
 }
 
-section div {
-    width: 70%;
-  }
-
-div.full-image {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    top: 0;
+.container.food {
+    justify-content: center;
 }
 
-div.image-1 {
-    background-image: url("assets/fitzroypinnacle.jpg");
-}
-div.image-2 {
-    background-image: url("assets/pinnacleLights@2x.jpg");
-}
-div.image-3 {
-    background-image: url("assets/beersOnTap@2x.jpg");
+.inner-container {
+    width: clamp(45ch, 33%, 75ch);
+} 
+
+.inner-container.food{
+    padding: 25px 30px;
+    width: clamp(45ch, 80%, 75ch);
+}    
+
+.inner-container h3 {
+    margin: 25px 0 15px 0;
 }
 
-div.image-4 {
-    background-image: url("assets/parma.jpg");
+.inner-container ul {
+    font-size: 1.2em;
+    list-style-type: none;
+    line-height: 1.6;
+    font-weight: light;
+    
 }
 
-div.image-5 {
-    background-image: url("assets/wine.jpg");
-}
-
-.text {
-    margin: auto;   
-}
-
-.header-bar {
-    background: var(--green);
-}
-
-.text h1 {
-    font-size: 4rem;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-.text p {
-    font-size: 18px;
-    line-height: 1.7;
+.inner-container p{
     margin: 15px 0;
 }
 
-.text button {
-    margin-top: 20px;
+section {
+    background-color: var(--cream);
 }
 
-.text button {
-    margin-right: 20px!important;
+.image-container {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-container svg {
+    width: 750px;
+    height: 750px;
 }
 
 .coloured-bar {
@@ -172,7 +190,7 @@ div.image-5 {
     border: 6px solid var(--black);
     text-align: center;
     box-shadow: 8px 10px var(--cream);
-    height: 280px;
+    max-height: 580px;
     max-width: 350px;
     margin: 0 20px;
     transition: 0.4s;
@@ -182,6 +200,7 @@ div.image-5 {
     color: var(--black);
     text-transform: uppercase;
     padding: 10px 0;
+    font-weight: 600;
 }
 .card p {
     font-size: 1.2rem; 
@@ -201,12 +220,16 @@ div.image-5 {
     background: var(--black)
 }
 
-.footer-section{
+.footer-section {
     display: flex;
     align-content: center;
     justify-content: space-around;
     padding: 20px 0 30px 0;
-    background: var(--green)
+    background: var(--green);
+}
+
+.footer-section a {
+    border-bottom: 0;
 }
 
 .info-section h2 {
@@ -295,7 +318,7 @@ input[type=text], select, textarea {
     }
     
     .text p {
-      font-size: 16px;
+      margin: 15px 0;
     }
     
     .nav-ul {
@@ -312,7 +335,7 @@ input[type=text], select, textarea {
     }
 
     .show {
-        height: 250px;
+        height: 100vh;
     }
 
     .nav-ul li {
@@ -328,6 +351,19 @@ input[type=text], select, textarea {
         display: block;
     }
 
+    .container {
+        flex-direction: column;
+    }
+
+    .inner-container {
+        padding: 30px 20px;
+    }
+
+    .image-container svg {
+        width: 250px;
+        height: 250px;
+    }
+
     .coloured-bar h1,
     .text h1 {
         font-size: 2rem;
@@ -335,14 +371,6 @@ input[type=text], select, textarea {
 
     .text:first-of-type button:last-of-type {
         margin-left: 0;
-    }
-    
-    section {
-      display: block;
-    }
-    
-    section div {
-      width:  100%;
     }
     
     section div.text,
@@ -364,7 +392,7 @@ input[type=text], select, textarea {
         margin: 20px 0;
         top: 0;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         column-gap: 10px;
         align-items: center;
         height: auto;
@@ -383,7 +411,6 @@ input[type=text], select, textarea {
         font-size: 1rem;
         margin-top: 0; 
         padding: 5px;
-
     }  
 
     .info-section {
@@ -406,19 +433,6 @@ input[type=text], select, textarea {
         text-align: center;
     }
     
-    div.full-image {
-      height: 50vw;
-     }
-
-    .about-us {
-        display: none;
-    }
-
-     .full-image.image-2,
-     .full-image.image-5 {
-         display: none;
-     }
-
      .footer-section article:last-of-type {
         text-align: center;
         margin-bottom: 20px;
