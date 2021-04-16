@@ -130,7 +130,7 @@ button:hover {
 } 
 
 .inner-container.food{
-    padding: 25px 30px;
+    padding: 38px 30px;
     width: clamp(45ch, 80%, 75ch);
 }    
 
