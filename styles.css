@@ -1,7 +1,7 @@
 :root {
     --black: #313131;
     --green: #A8B5A4;
-    --cream: #EBE6E1;
+    --cream: #eeeded;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans+Narrow:wght@400;700&display=swap');
@@ -45,7 +45,7 @@ a {
 header {
     display: flex;
     align-items: center;
-    background: var(--green);
+    background: var(--black);
     justify-content: space-between;
     padding: 8px 80px;
 }
